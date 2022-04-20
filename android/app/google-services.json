@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "51059504937",
+    "project_id": "sks-blessmantra",
+    "storage_bucket": "sks-blessmantra.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:51059504937:android:74905093f3701418b6e938",
+        "android_client_info": {
+          "package_name": "com.blessmantra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "51059504937-fq1nfioorlibb02i9m42m5852pd63iec.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.blessmantra",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "51059504937-6jbtkrtfvlkjt1b3v82ubqgcjmf478ot.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdfFmpm_j03GZJNvOQH2zUfPZGI8LMOtA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "51059504937-6jbtkrtfvlkjt1b3v82ubqgcjmf478ot.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
