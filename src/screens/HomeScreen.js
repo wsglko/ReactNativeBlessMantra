@@ -2,19 +2,23 @@ import React,{useState, useEffect} from 'react';
 import { SafeAreaView, ScrollView, View , StyleSheet} from 'react-native';
 import { Text, Button } from 'react-native-paper'
 import auth from "@react-native-firebase/auth";
-import { Login } from '../components/Login';
 
 export default function HomeScreen({navigation}) {
+	const [user, setUser] = useState("");
+	useEffect(() => {
+		setUser(auth().currentUser);
+	},[])
 
-	const calling = () => {
-		auth().currentUser ? "Calling" : <Login/>;
+	const calling = (e) => {
+		e.preventDefault();
+		user ? alert("Calling") : navigation.replace("Login");
 	}
   return (
       <SafeAreaView>
           <ScrollView contentInsetAdjustmentBehavior="automatic">
               <View style={styles.sectionContainer}>
-				<Button style={{margin:5,padding:5}} color="green" mode="contained" icon="phone" onPress={()=>calling}>Calling</Button>
-				<Button style={{margin:5,padding:5}} color="blue" mode="contained" icon="wechat">Calling</Button>
+				<Button style={{margin:5,padding:5}} color="green" mode="contained" icon="phone" onPress={calling}>Calling</Button>
+				<Button style={{margin:5,padding:5}} color="blue" mode="contained" icon="wechat">Chat</Button>
               </View>
           </ScrollView>
       </SafeAreaView>

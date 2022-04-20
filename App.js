@@ -94,12 +94,14 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 const Stack = createNativeStackNavigator();
 import HomeScreen from './src/screens/HomeScreen';
+import Login from './src/components/Login';
 const App = () => {
 	return (
 		<PaperProvider>
 			<NavigationContainer>
 				<Stack.Navigator>
 					<Stack.Screen name="Home" component={HomeScreen} />
+          <Stack.Screen name="Login" component={Login} />
 				</Stack.Navigator>
 			</NavigationContainer>
 		</PaperProvider>
