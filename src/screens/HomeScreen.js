@@ -19,6 +19,7 @@ export default function HomeScreen({navigation}) {
               <View style={styles.sectionContainer}>
 				<Button style={{margin:5,padding:5}} color="green" mode="contained" icon="phone" onPress={calling}>Calling</Button>
 				<Button style={{margin:5,padding:5}} color="blue" mode="contained" icon="wechat">Chat</Button>
+				<Button style={{margin:10, padding:10}} color="teal" mode="contained" onPress={()=>navigation.replace("splash")}>Spash Screen</Button>
               </View>
           </ScrollView>
       </SafeAreaView>

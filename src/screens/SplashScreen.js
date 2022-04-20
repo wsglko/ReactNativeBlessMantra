@@ -1,16 +1,29 @@
 import React from "react";
-import { SafeAreaView, ScrollView, View } from "react-native";
+import { SafeAreaView, ScrollView, View, Image, StyleSheet } from "react-native";
 
 const SplashScreen = ({navigation}) => {
     return (
-        <SafeAreaView>
-            <ScrollView>
-                <View>
-                    <Text>SplashScreen</Text>
+        <SafeAreaView style={{flex:1}}>
+                <View style={styles.container}>
+                    <Image
+                        source={require("../../images/bm1.jpeg")}
+                        style={{
+                            width: "90%",
+                            resizeMode: "contain",
+                            margin: 30,
+                        }}
+                    />
                 </View>
-            </ScrollView>
         </SafeAreaView>
     )
 }
 
 export default SplashScreen;
+
+const styles = StyleSheet.create({
+    container:{
+        flex:1,
+        alignItems:"center",
+        justifyContent:"center",
+    }
+})
