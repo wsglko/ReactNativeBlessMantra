@@ -101,10 +101,10 @@ const App = () => {
 	return (
 		<PaperProvider>
 			<NavigationContainer>
-				<Stack.Navigator>
+				<Stack.Navigator initialRouteName="splash">
+          <Stack.Screen name="splash" component={SplashScreen} options={{ headerShown: false }} />
 					<Stack.Screen name="Home" component={HomeScreen} />
           <Stack.Screen name="Login" component={Login} />
-          <Stack.Screen name="splash" component={SplashScreen} />
 				</Stack.Navigator>
 			</NavigationContainer>
 		</PaperProvider>
